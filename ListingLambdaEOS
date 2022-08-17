@@ -7,3 +7,4 @@ do
         aws lambda list-functions --region ${region} --output text --query "Functions[?Runtime=='${runtime}'].{ARN:FunctionArn, Runtime:Runtime}"
     done
 done
+
